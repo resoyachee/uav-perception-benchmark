@@ -1,0 +1,10 @@
+scenario,model,tracker,conf,blur_k,step,frames,unique_ids,total_box_ids,avg_track_len,max_track_len,gap_events,avg_infer_ms
+Baseline (n + ByteTrack),yolo26n.pt,bytetrack.yaml,0.25,1,1,62,30,1318,43.93,62,14,12.1
+Baseline (n + BoT-SORT),yolo26n.pt,botsort.yaml,0.25,1,1,62,30,1329,44.3,62,19,12.88
+Baseline (s + ByteTrack),yolo26s.pt,bytetrack.yaml,0.25,1,1,62,20,970,48.5,62,10,13.65
+Baseline (s + BoT-SORT),yolo26s.pt,botsort.yaml,0.25,1,1,62,20,970,48.5,62,10,13.04
+Blur k=25 c=0.15 (n + ByteTrack),yolo26n.pt,bytetrack.yaml,0.15,25,1,62,11,193,17.55,52,4,13.46
+Blur k=25 c=0.15 (n + BoT-SORT),yolo26n.pt,botsort.yaml,0.15,25,1,62,10,211,21.1,52,4,12.55
+Blur k=25 c=0.15 (s + BoT-SORT),yolo26s.pt,botsort.yaml,0.15,25,1,62,15,384,25.6,62,15,16.65
+Blur k=15 + Skip=2 c=0.15 (n + BoT-SORT),yolo26n.pt,botsort.yaml,0.15,15,2,31,15,317,21.13,31,5,13.59
+Blur k=15 + Skip=2 c=0.15 (s + BoT-SORT),yolo26s.pt,botsort.yaml,0.15,15,2,31,17,379,22.29,31,5,13.81

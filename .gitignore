@@ -1,0 +1,9 @@
+(
+  echo .venv/
+  echo venv/
+  echo __pycache__/
+  echo *.py[cod]
+  echo *.pt
+  echo *.mp4
+) > .gitignore
+yolo26n.pt
